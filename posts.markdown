@@ -1,8 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: page
+# title: 所有文章
+permalink: /posts/
 ---
 
 <div class="posts-archive">
@@ -10,6 +9,7 @@ layout: home
 
   <!-- 分类筛选 -->
   <div class="categories-filter">
+    <h3>按分类浏览</h3>
     <div class="category-buttons">
       <button class="category-btn active" data-category="all">全部</button>
       {%- for category in site.categories -%}

@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="home">
+  {{ content }}
+ 
+  <!-- 订阅RSS -->
+  {%- if site.feed.path -%}
+    <div class="rss-subscribe">
+      <p>订阅 <a href="{{ site.feed.path | relative_url }}">RSS 源</a> 获取最新更新</p>
+    </div>
+  {%- endif -%}
+</div>
+
+ 
