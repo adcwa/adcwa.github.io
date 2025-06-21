@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "我的MBIT"
+date:   2025-06-21 19:50:18 +0800
+categories: mbit
+---
+asdfasdf sdf 
+
+![Pasted Graphic](/assets/2025/06/mbti.jpeg)
+
+

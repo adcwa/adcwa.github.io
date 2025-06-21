@@ -23,8 +23,8 @@ email: adcwangfeng@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
    built with Jekyll and deployed on GitHub pages.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://adcwa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  adcwa
+url: "https://wangfeng.space" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  
 
 # Build settings
 theme: minima
