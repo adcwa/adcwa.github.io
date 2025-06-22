@@ -1,0 +1,76 @@
+<!-- MathJax Configuration -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+      TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        extensions: ["AMSmath.js", "AMSsymbols.js"]
+      }
+    },
+    "HTML-CSS": {
+      styles: {
+        ".MathJax_Display": {
+          margin: "1rem 0"
+        },
+        ".MathJax": {
+          color: "#2c3e50"
+        }
+      },
+      linebreaks: { automatic: true },
+      scale: 90
+    },
+    CommonHTML: {
+      linebreaks: { automatic: true },
+      scale: 90
+    },
+    SVG: {
+      linebreaks: { automatic: true },
+      scale: 90
+    }
+  });
+</script>
+
+<!-- MathJax Library -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<!-- MathJax Styling -->
+<style>
+  .MathJax_Display {
+    text-align: center !important;
+    margin: 1.5rem 0 !important;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .MathJax {
+    font-size: 1.1em !important;
+  }
+  
+  .MathJax_Preview {
+    color: #6c757d;
+    font-style: italic;
+  }
+  
+  /* 响应式数学公式 */
+  @media (max-width: 768px) {
+    .MathJax_Display {
+      margin: 1rem -1rem !important;
+      border-radius: 0;
+      padding: 0.8rem;
+    }
+    
+    .MathJax {
+      font-size: 1em !important;
+    }
+  }
+</style> 

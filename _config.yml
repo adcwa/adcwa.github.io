@@ -28,8 +28,54 @@ github_username:
 
 # Build settings
 theme: minima
+
+# Markdown处理器配置
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    line_numbers: false
+    tab_width: 2
+  extensions:
+    - tables
+    - autolink
+    - strikethrough
+    - fenced_code_blocks
+    - footnotes
+    - smart
+  math_engine: mathjax
+  math_engine_opts:
+    preview: true
+    preview_as_code: false
+
+# Rouge语法高亮配置
+# default          # 默认风格，类似 Python Pygments 的默认风格
+# monokai          # 经典深色系，非常流行
+# friendly         # 浅色系，适合文档
+# bright           # 高对比度浅色风格
+# pastie           # 深色背景，带淡蓝色文本
+# colorful         # 明亮、色彩丰富的风格
+# murphy           # 标准白色背景风格
+# manni            # 类似 friendly，颜色更鲜艳
+# perldoc          # Perl 文档风格
+# emacs            # Emacs 编辑器风格
+# vs               # Visual Studio 风格
+# tango            # Tango 图标项目配色
+# stata_dark       # Stata 暗黑风格
+# stata_light      # Stata 亮色风格
+# fruity           # 深色背景下的亮色语法高亮
+# bw               # 黑白风格（无颜色）
+# algol_nu         # 简洁风格，适用于 Algol 类语言
+highlighter: rouge
+rouge:
+  style: pastie
+  line_numbers: false
+
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.

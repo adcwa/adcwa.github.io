@@ -3,7 +3,7 @@ layout: post
 title: "Jekyll 博客优化实践：打造高性能静态网站"
 date: 2024-11-28 09:15:00 +0800
 categories: [技术教程, 博客]
-tags: [Jekyll, GitHub Pages, 静态网站, 性能优化]
+tags: [Jekyll, GitHub Pages, 静态网站, AIGC,  搜索优化, 博客搭建]
 author: adcwa
 excerpt: "深入探讨Jekyll博客的优化技巧，包括性能提升、SEO优化、主题定制等实用方法，帮助你打造更好的静态网站。"
 ---

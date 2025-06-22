@@ -1,0 +1,145 @@
+<!-- Mermaid Diagram Support -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js"></script>
+
+<script>
+  // Mermaid Configuration
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'default',
+    themeVariables: {
+      primaryColor: '#667eea',
+      primaryTextColor: '#2c3e50',
+      primaryBorderColor: '#667eea',
+      lineColor: '#718096',
+      secondaryColor: '#f8f9fa',
+      tertiaryColor: '#e2e8f0',
+      background: '#ffffff',
+      mainBkg: '#ffffff',
+      secondBkg: '#f8f9fa',
+      tertiaryBkg: '#e2e8f0'
+    },
+    flowchart: {
+      useMaxWidth: true,
+      htmlLabels: true,
+      curve: 'basis'
+    },
+    sequence: {
+      useMaxWidth: true,
+      wrap: true
+    },
+    gantt: {
+      useMaxWidth: true
+    },
+    journey: {
+      useMaxWidth: true
+    },
+    gitGraph: {
+      useMaxWidth: true
+    }
+  });
+
+  // Auto-detect and render Mermaid diagrams
+  document.addEventListener('DOMContentLoaded', function() {
+    // Find all code blocks with mermaid class
+    const mermaidBlocks = document.querySelectorAll('code.language-mermaid, .language-mermaid');
+    
+    mermaidBlocks.forEach(function(block, index) {
+      // Create a div to replace the code block
+      const mermaidDiv = document.createElement('div');
+      mermaidDiv.className = 'mermaid-diagram';
+      mermaidDiv.id = 'mermaid-' + index;
+      mermaidDiv.textContent = block.textContent;
+      
+      // Replace the code block with the div
+      if (block.parentNode.tagName === 'PRE') {
+        block.parentNode.parentNode.replaceChild(mermaidDiv, block.parentNode);
+      } else {
+        block.parentNode.replaceChild(mermaidDiv, block);
+      }
+    });
+
+    // Re-initialize Mermaid to render new diagrams
+    if (typeof mermaid !== 'undefined') {
+      mermaid.init();
+    }
+  });
+</script>
+
+<!-- Mermaid Styling -->
+<style>
+  .mermaid-diagram {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  
+  .mermaid svg {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Mermaid 图表样式优化 */
+  .mermaid .node rect,
+  .mermaid .node circle,
+  .mermaid .node ellipse,
+  .mermaid .node polygon {
+    fill: #f8f9fa;
+    stroke: #667eea;
+    stroke-width: 2px;
+  }
+  
+  .mermaid .node .label {
+    color: #2c3e50;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .mermaid .edgePath .path {
+    stroke: #718096;
+    stroke-width: 2px;
+  }
+  
+  .mermaid .arrowheadPath {
+    fill: #718096;
+    stroke: #718096;
+  }
+  
+  /* 响应式图表 */
+  @media (max-width: 768px) {
+    .mermaid-diagram {
+      margin: 1.5rem -1rem;
+      border-radius: 0;
+      padding: 1rem;
+    }
+    
+    .mermaid svg {
+      font-size: 12px;
+    }
+  }
+  
+  /* 流程图特殊样式 */
+  .mermaid .flowchart-link {
+    stroke: #667eea;
+    stroke-width: 2px;
+  }
+  
+  /* 序列图样式 */
+  .mermaid .actor {
+    fill: #667eea;
+    stroke: #667eea;
+  }
+  
+  .mermaid .actor-line {
+    stroke: #718096;
+  }
+  
+  /* 甘特图样式 */
+  .mermaid .section0, .mermaid .section1, .mermaid .section2 {
+    fill: #667eea;
+    opacity: 0.8;
+  }
+</style> 
