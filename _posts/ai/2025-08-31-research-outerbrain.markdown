@@ -2,7 +2,7 @@
 layout: post
 title:  "新兴的数字外脑：AI驱动的认知增强分析报告"
 date:   2025-08-31 09:00:00 +0800
-categories: AI
+categories: [AI,Research]
 excerpt: "AI驱动的认知增强分析报告"
 tags: [外脑,阅读,AI]
 ---

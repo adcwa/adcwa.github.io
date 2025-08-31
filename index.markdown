@@ -138,13 +138,13 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .year-section {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .year-heading {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #2c3e50;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 3px solid #667eea;
   display: inline-block;
@@ -152,19 +152,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .post-item {
   display: flex;
-  margin-bottom: 1.5rem;
-  padding: 1.5rem;
+  margin-bottom: 0.2rem;
+  padding: 0.5rem;
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
-  border-left: 4px solid transparent;
+  border-left: 12px solid transparent;
 }
 
 .post-item:hover {
   border-left-color: #667eea;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  transform: translateX(5px);
+  transform: translateX(-25px);
 }
 
 .post-date {

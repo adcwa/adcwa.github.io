@@ -2,7 +2,7 @@
 layout: post
 title: "AI Agents 架构与交互流程"
 date: 2025-06-22 11:35:00 +0800
-categories: [AI, Agents]
+categories: [AI,Introduction]
 tags: [AI, Agents, Architecture, Workflow]
 author: adcwa
 excerpt: "探索 AI Agents 的架构设计和交互流程，包括多 Agent 协作和任务执行机制。"

@@ -2,7 +2,8 @@
 layout: post
 title:  "开始使用提示工程的实用链接"
 date:   2025-06-22 10:10:00 +0800
-categories: prompt
+categories: [AI,Introduction]
+tags: [AI]
 ---
  
    <a href="https://www.gptboss.com/">GPTBoss</a>

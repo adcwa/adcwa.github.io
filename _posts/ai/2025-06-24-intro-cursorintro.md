@@ -1,6 +1,7 @@
 ---
 title: "Cursor 介绍"
 date: 2025-06-24
+categories: [AI,Introduction]
 tags: [cursor, vscode, prompt, tool, apply, engine,时序图]
 excerpt: "Cursor 介绍 mermaid 时序图"
 mermaid: true

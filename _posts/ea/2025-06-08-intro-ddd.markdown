@@ -2,8 +2,8 @@
 layout: post
 title:  "一张图DDD"
 date:   2025-06-08 19:50:18 +0800
-categories: DDD
-tags: [EDA, 领域驱动设计]
+categories: EA
+tags: [EDA, 领域驱动设计,DDD]
 
 ---
 

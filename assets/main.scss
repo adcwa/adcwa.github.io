@@ -7,13 +7,13 @@
 
 /* 头部导航搜索按钮 */
 .header-search-trigger {
-  display: inline-flex;
+  display: inline;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   background: transparent;
   border: 1px solid #e1e5e9;
-  border-radius: 16px;
+  border-radius: 12px;
   color: #666;
   font-size: 14px;
   cursor: pointer;
