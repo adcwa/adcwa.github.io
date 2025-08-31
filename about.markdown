@@ -1,8 +1,8 @@
----
+
 layout: page
 title: About
 permalink: /about/
----
+
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 10px; margin-bottom: 2rem; text-align: center;">
   <h1 style="margin: 0 0 1rem 0; font-size: 2.5rem;">🎁 免费 AI 代理开发服务</h1>
