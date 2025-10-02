@@ -1,0 +1,59 @@
+---
+layout: post
+title:  AI Coding 一些工具整理"
+date:   2025-10-02 09:00:00 +0800
+categories: [AI,Coding]
+excerpt: "AI Coding"
+tags: [Coding,AI]
+---
+
+
+当前 AI 开发生态越来约成熟，工具眼花缭乱,也不断的在更新，所以整理一下，不过用好工具的前提是有好的方法论。
+虽然现在都说端到端的产出，但是容易陷入 garbage in  garbage out 的情况，所以有一个好的开发方法非常重要，所以第一个要锁的是关于流程的工具
+工具
+
+
+##  [spec-kit](https://github.com/github/spec-kit) 
+-  使用 **`/constitution`** 命令创建项目的管理原则和开发指南，以指导所有后续开发。
+- 使用 **`/specify`** 命令描述要构建的内容。关注**什么**和**为什么** ，而不是技术堆栈。
+- 使用 *`/plan`** 命令提供技术堆栈和体系结构选择。
+- 使用 **`/tasks`** 从实施计划创建可作的任务列表。
+- 使用 **`/implement`** 执行所有任务并根据计划构建您的功能。
+- 按照以上流程，通过`specify --ai` 指定开发的 ai 工具,支持的AI 助手：`claude`、`gemini`、`copilot`、`cursor`、`qwen`、`opencode`、`codex`、`windsurf`、`kilocode`、`auggie` 或 `roo`
+
+
+## [exa](https://smithery.ai/server/exa)
+intelligent web search and web crawling.
+访问 [https://smithery.ai/server/exa](https://smithery.ai/server/exa) ，在网页点击JSON，可以看到key，格式类似于windows激活码，把它复制下来，保存好，不要泄漏
+![xxxx](/assets/exasearch.png)
+
+
+## [shrimp-task-manager](https://github.com/cjo4m06/mcp-shrimp-task-manager)
+这是一个轻量级但功能强大的系统，用于基于 **MCP 架构**构建的代理引导任务工作流程。
+## [chrome-devtools](https://github.com/ChromeDevTools/chrome-devtools-mcp) 
+允许您的编码代理（例如 Gemini、Claude、Cursor 或 Copilot）控制和检查实时 Chrome 浏览器。它充当模型上下文协议 （MCP） 服务器，使您的 AI 编码助手能够访问 Chrome DevTools 的全部功能，以实现可靠的自动化、深入调试和性能分析。
+
+```json
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp@latest"]
+    }
+  }
+}
+```
+
+## [Code Index MCP ](https://github.com/johnhuang316/code-index-mcp)
+是一个[模型上下文协议](https://modelcontextprotocol.io/)服务器，它弥合了 AI 模型和复杂代码库之间的差距。它提供智能索引、高级搜索功能和详细的代码分析，帮助人工智能助手有效地理解和导航您的项目。
+**非常适合：** 代码审查、重构、文档生成、调试帮助和架构分析。
+```json
+{
+  "mcpServers": {
+    "code-index": {
+      "command": "uvx",
+      "args": ["code-index-mcp"]
+    }
+  }
+}
+```
